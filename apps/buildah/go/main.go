@@ -19,7 +19,7 @@ func main() {
 	}
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello, World! I am using %s by the way.", runtime.Version())
+		fmt.Fprintf(w, "Hello, World! I am using %s by the way.Yeahh!!", runtime.Version())
 	})
 
 	http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
